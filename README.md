@@ -1,5 +1,5 @@
 # qdice
-A project to create a more feminist/queer/intersectional version of the diceware wordlist.
+Have you ever generated a diceware passphrase and ended up with a word that you'd rather not use in a passphrase forever? In the spirit of being more aware of the language we use and its effect on other people, this project is an attempt to create a more inclusive, diverse, feminist, queer, and intersectional version of the diceware wordlist.
 
 ## I just want your wordlist.
 ```
@@ -20,7 +20,7 @@ Alternatively, this project still needs more infrastructure work:
 * anything else you can think of!
 
 ## What are these files?
-* `dicegen.sh`: This is the script that concatenates the `list*` files and generates a file `diceware_wordlist.txt`, which contains the mapping of words to diceware rolls. Largely adapted from [here][https://gist.github.com/zxjinn/4463806] by @zxjinn.
+* `dicegen.sh`: This is the script that concatenates the `list*` files and outputs the result to `wordlist.txt'. It then generates a file `diceware_wordlist.txt`, which contains the mapping of words to diceware rolls. Largely adapted from [here](https://gist.github.com/zxjinn/4463806) by [@zxjinn](https://github.com/zxjinn).
 
 * `list*`: These are the word lists used to generate the diceware wordlist, split into smaller sublists for easier editing.
 
