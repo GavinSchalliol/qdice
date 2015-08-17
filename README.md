@@ -20,8 +20,10 @@ Alternatively, this project still needs more infrastructure work:
 * anything else you can think of!
 
 ## What are these files?
-* `dicegen.sh`: This is the script that concatenates the `list*` files and assigns each of them a diceware roll. Largely adapted from [here][https://gist.github.com/zxjinn/4463806] by @zxjinn.
+* `dicegen.sh`: This is the script that concatenates the `list*` files and generates a file `diceware_wordlist.txt`, which contains the mapping of words to diceware rolls. Largely adapted from [here][https://gist.github.com/zxjinn/4463806] by @zxjinn.
 
 * `list*`: These are the word lists used to generate the diceware wordlist, split into smaller sublists for easier editing.
 
 * `wordlist.txt`: The original wordlist. Probably doesn't need to be here, actually.
+
+* `diceware_wordlist.txt`: Once you've run `dicegen.sh`, this file contains your diceware wordlist!
