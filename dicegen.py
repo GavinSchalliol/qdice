@@ -1,3 +1,5 @@
+import sys
+
 # First, get rid of the existing diceware wordlist
 f1 = open('dw_wordlist.txt', 'w')
 f1.write("")
@@ -6,6 +8,10 @@ f1.close()
 file = open('wordlist.txt', 'r')
 lines = file.readlines()
 file.close()
+if len(lines) < 7776:
+	print "ERROR: incorrect number of lines in wordlist file."
+	print "A complete wordlist must contain at least 7776 lines, and the current wordlist contains " + str(len(lines)) + " lines."
+	sys.exit(1)
 
 f1 = open('dw_wordlist.txt', 'a')
 
