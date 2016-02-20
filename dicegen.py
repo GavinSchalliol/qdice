@@ -30,7 +30,7 @@ def printNumber(q1,q2,q3,q4,q5):
 	q4 = str(q4)
 	q5 = str(q5)
 	number = q1 + q2 + q3 + q4 + q5
-	f1.write(number + " " + lines[index] + '\n')
+	f1.write(number + " " + lines[index])
 
 while (v < 7):
 	a = v
