@@ -15,18 +15,11 @@ if len(lines) < 7776:
 
 f1 = open('dw_wordlist.txt', 'a')
 
-global a
-global b
-global c
-global d
-global e
-global f
-u = 1
-v = 1
-w = 1
-x = 1
-y = 1
-z = 1
+a = 1
+b = 1
+c = 1
+d = 1
+e = 1
 index = 0
 
 def printNumber(q1,q2,q3,q4,q5):
@@ -38,26 +31,21 @@ def printNumber(q1,q2,q3,q4,q5):
 	number = q1 + q2 + q3 + q4 + q5
 	f1.write(number + " " + lines[index])
 
-while (v < 7):
-	a = v
-	while (w < 7):
-		b = w
-		while (x < 7):
-			c = x
-			while (y < 7):
-				d = y
-				while (z < 7):
-					e = z
+while (a < 7):
+	while (b < 7):
+		while (c < 7):
+			while (d < 7):
+				while (e < 7):
 					printNumber(a,b,c,d,e)
-					z += 1
+					e += 1
 					index += 1
-				y += 1
-				z = 1
-			x += 1
-			y = 1
-		w += 1
-		x = 1
-	v += 1
-	w = 1
+				d += 1
+				e = 1
+			c += 1
+			d = 1
+		b += 1
+		c = 1
+	a += 1
+	b = 1
 
 f1.close()
