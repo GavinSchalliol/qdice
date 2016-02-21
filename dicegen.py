@@ -1,7 +1,5 @@
 import sys
-
-inputFile = "wordlist.txt"
-outputFile = "dw_wordlist.txt"
+from config import inputFile, outputFile
 
 def printLine(q1,q2,q3,q4,q5,index):
 	number = str(q1) + str(q2) + str(q3) + str(q4) + str(q5)
